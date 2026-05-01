@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - CEEP</title>
+    <style>
+        body { font-family: sans-serif; background: #eef2f7; margin: 0; }
+        header { background: #003399; color: white; padding: 20px; text-align: center; }
+        
+        .container { max-width: 1100px; margin: 40px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 0 20px; }
+        
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 6px solid #cc0000; }
+        .card-header { background: #f8f9fa; padding: 20px; border-bottom: 1px solid #eee; }
+        .card-header h3 { margin: 0; color: #003399; }
+        
+        .card-body { padding: 20px; }
+        .ano-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; padding: 10px; background: #f1f4ff; border-radius: 6px; }
+        .ano-number { background: #003399; color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cursos Técnicos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cursos Oferecidos</h2>
+            <p>Conheça nossa grade curricular para o ensino técnico:</p>
+
+            <div class="grade-cursos">
+                <h3>Informática</h3>
+                <ul>
+                    <li>1º Ano - Fundamentos de TI e Hardware</li>
+                    <li>2º Ano - Desenvolvimento Web e Lógica</li>
+                    <li>3º Ano - Banco de Dados e Sistemas Móveis</li>
+                </ul>
+
+                <h3>Redes de Computadores</h3>
+                <ul>
+                    <li>1º Ano - Introdução a Redes e Cabeamento</li>
+                    <li>2º Ano - Protocolos e Roteamento</li>
+                    <li>3º Ano - Segurança de Redes e Servidores</li>
+                </ul>
+            </div>
+        </section>
+
+        <figure>
+            <img src="https://mossoroonline.com.br/wp-content/uploads/2023/09/Projeto-Geracao-Conectada-revoluciona-escolas-do-RN_Foto-Carmem-Felix-1-1024x683.jpg" 
+                 alt="Estudantes em laboratório de informática" 
+                 style="max-width: 100%; height: auto; border-radius: 8px;">
+            <figcaption>Laboratórios equipados para aulas práticas.</figcaption>
+        </figure>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 - CEEP | <a href="index.html">Voltar ao Início</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - CEEP</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(rgba(0,51,153,0.8), rgba(0,51,153,0.8)), url('https://source.unsplash.com/random/1600x900/?office'); background-size: cover; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+        
+        main { background: white; padding: 40px; border-radius: 20px; width: 100%; max-width: 450px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        h2 { color: #003399; text-align: center; margin-bottom: 30px; }
+        
+        label { font-weight: 600; color: #444; margin-bottom: 5px; display: block; }
+        input[type="text"], select { width: 100%; padding: 12px; margin-bottom: 20px; border: 2px solid #eee; border-radius: 8px; transition: 0.3s; }
+        input:focus { border-color: #cc0000; outline: none; }
+        
+        .btn-group { display: flex; gap: 10px; }
+        button, input[type="submit"] { flex: 1; background: #cc0000; color: white; border: none; padding: 15px; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #003399; transform: translateY(-2px); }
+        .reset { background: #ccc; color: #333; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fale Conosco</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Envie sua dúvida</h2>
+            <form action="#" method="POST">
+                <!-- Nome -->
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required>
+                <br><br>
+
+                <!-- Curso - Atualizado conforme a página de cursos -->
+                <label>Qual curso você tem interesse?</label><br>
+                <input type="radio" id="info" name="curso" value="informatica">
+                <label for="info">Informática</label>
+                
+                <input type="radio" id="redes" name="curso" value="redes">
+                <label for="redes">Redes de Computadores</label>
+                <br><br>
+
+                <!-- Interesses -->
+                <label>O que você busca no CEEP?</label><br>
+                <input type="checkbox" id="estudar" name="interesse" value="estudar">
+                <label for="estudar">Apenas Estudar</label>
+                
+                <input type="checkbox" id="trabalhar" name="interesse" value="estagiando">
+                <label for="trabalhar">Estágio/Trabalho</label>
+                <br><br>
+
+                <!-- Botões -->
+                <button type="submit">Enviar Mensagem</button>
+                <button type="reset" style="background-color: #ccc; color: black;">Limpar Campos</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 - CEEP | Parnamirin/RN</p>
+    </footer>
+
+</body>
+</html>
