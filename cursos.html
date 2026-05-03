@@ -1,23 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos - CEEP</title>
-    <style>
-        body { font-family: sans-serif; background: #eef2f7; margin: 0; }
-        header { background: #003399; color: white; padding: 20px; text-align: center; }
+   <style>
+    /* Configurações Gerais da Página */
+    body {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        color: #333;
+    }
+
+    header {
+        background-color: #003399; /* Azul CEEP */
+        color: white;
+        padding: 30px;
+        text-align: center;
+        border-bottom: 5px solid #cc0000; /* Vermelho CEEP */
+    }
+
+    main {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #003399;
+        border-left: 5px solid #cc0000;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+
+    /* Estilo da Tabela Obrigatória (Item do Projeto) */
+    table {
+        width: 100%;
+        border-collapse: collapse; /* Remove espaços entre as bordas */
+        margin: 20px 0;
+        font-size: 1rem;
+    }
+
+    table th {
+        background-color: #003399;
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        padding: 12px;
+    }
+
+    /* Estilo das Listas (ul/ol - Item do Projeto) */
+    ul {
+        margin: 15px 0;
+        padding-left: 25px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    /* Destaque para textos importantes (Tag strong) */
+    strong {
+        color: #cc0000;
+    }
+
+    /* Linha Divisória (Tag hr) */
+    hr {
+        border: 0;
+        height: 1px;
+        background: #ddd;
+        margin: 40px 0;
+    }
+
+    /* Responsividade: Ajusta a tabela para telas de celular */
+    @media (max-width: 600px) {
+        table {
+            font-size: 0.85rem;
+        }
         
-        .container { max-width: 1100px; margin: 40px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 0 20px; }
-        
-        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 6px solid #cc0000; }
-        .card-header { background: #f8f9fa; padding: 20px; border-bottom: 1px solid #eee; }
-        .card-header h3 { margin: 0; color: #003399; }
-        
-        .card-body { padding: 20px; }
-        .ano-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; padding: 10px; background: #f1f4ff; border-radius: 6px; }
-        .ano-number { background: #003399; color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.8rem; }
-    </style>
+        main {
+            margin: 10px;
+            padding: 15px;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
 </head>
 <body>
 
