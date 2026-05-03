@@ -1,27 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - CEEP</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(rgba(0,51,153,0.8), rgba(0,51,153,0.8)), url('https://source.unsplash.com/random/1600x900/?office'); background-size: cover; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+    /* Estilos Gerais (Reset e Fonte) */
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #2b0eba; /* Fundo cinza claro */
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Estrutura Principal (Tag Main Obrigatória) */
+    main {
+        background-color: rgb(234, 236, 244);
+        max-width: 500px; /* Largura máxima para não ficar gigante no PC */
+        margin: 0 auto;
+        padding: 25px;
+        border-radius: 10px;
+        border: 2px solid #003399; /* Borda azul do CEEP */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #003399;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Estilo do Formulário */
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 15px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Campos de Texto e Select */
+    input[type="text"], 
+    input[type="email"], 
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    /* Estilo para Radio e Checkbox (Itens Obrigatórios) */
+    .opcoes {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+
+    /* Botões (Reset e Enviar Obrigatórios) */
+    .botoes-container {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    input[type="submit"] {
+        flex: 2;
+        background-color: #003399;
+        color: white;
+        border: none;
+        padding: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    input[type="reset"] {
+        flex: 1;
+        background-color: #cc0000; /* Vermelho para o reset */
+        color: white;
+        border: none;
+        padding: 12px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    /* Responsividade (Obrigatório) */
+    @media (max-width: 480px) {
+        main {
+            width: 95%;
+            padding: 15px;
+        }
         
-        main { background: white; padding: 40px; border-radius: 20px; width: 100%; max-width: 450px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
-        h2 { color: #003399; text-align: center; margin-bottom: 30px; }
-        
-        label { font-weight: 600; color: #444; margin-bottom: 5px; display: block; }
-        input[type="text"], select { width: 100%; padding: 12px; margin-bottom: 20px; border: 2px solid #eee; border-radius: 8px; transition: 0.3s; }
-        input:focus { border-color: #cc0000; outline: none; }
-        
-        .btn-group { display: flex; gap: 10px; }
-        button, input[type="submit"] { flex: 1; background: #cc0000; color: white; border: none; padding: 15px; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; }
-        button:hover { background: #003399; transform: translateY(-2px); }
-        .reset { background: #ccc; color: #333; }
-    </style>
+        .botoes-container {
+            flex-direction: column; /* Botões um em cima do outro no celular */
+    
+        }
+         body {
+        background-color: #0a6cff; /* Um cinza azulado suave */
+        margin: 0;
+        padding: 0;
+    }
+    }
+</style>
 </head>
 <body>
-
+ <center>
     <header>
         <h1>Fale Conosco</h1>
         <nav>
@@ -33,7 +118,7 @@
             </ul>
         </nav>
     </header>
-
+ </center>
     <main>
         <section class="form-container">
             <h2>Envie sua dúvida</h2>
