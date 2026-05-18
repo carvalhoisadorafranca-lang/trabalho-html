@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - CEEP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <center>
+        <header>
+            <h1>Fale Conosco</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+    </center>
+
+    <main>
+        <section class="form-container">
+
+            <h2>Envie sua dúvida</h2>
+
+            <form action="#" method="POST">
+
+                <label for="nome">Nome Completo:</label>
+
+                <input type="text"
+                       id="nome"
+                       name="nome"
+                       placeholder="Digite seu nome aqui"
+                       required>
+
+                <label>Qual curso você tem interesse?</label>
+
+                <input type="radio"
+                       id="info"
+                       name="curso"
+                       value="informatica">
+
+                <label for="info">Informática</label>
+
+                <input type="radio"
+                       id="redes"
+                       name="curso"
+                       value="redes">
+
+                <label for="redes">Redes de Computadores</label>
+
+                <label>O que você busca no CEEP?</label>
+
+                <input type="checkbox"
+                       id="estudar"
+                       name="interesse"
+                       value="estudar">
+
+                <label for="estudar">Apenas Estudar</label>
+
+                <input type="checkbox"
+                       id="trabalhar"
+                       name="interesse"
+                       value="estagiando">
+
+                <label for="trabalhar">Estágio/Trabalho</label>
+
+                <div class="botoes-container">
+                    <button type="submit">Enviar Mensagem</button>
+
+                    <button type="reset">
+                        Limpar Campos
+                    </button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 - CEEP | Parnamirim/RN</p>
+    </footer>
+
+</body>
+</html>
